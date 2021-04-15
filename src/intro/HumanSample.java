@@ -18,5 +18,6 @@ public class HumanSample {
 
         System.out.println(human1);
         System.out.println(human2);
+
     }
 }
