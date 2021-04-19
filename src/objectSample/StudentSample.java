@@ -1,4 +1,4 @@
-package ObjectSample;
+package objectSample;
 
 public class StudentSample {
     public static void main(String[] args) {

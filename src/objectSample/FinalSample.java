@@ -1,4 +1,4 @@
-package ObjectSample;
+package objectSample;
 
     //finalのサンプル
     class SuperClass {

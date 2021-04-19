@@ -1,4 +1,4 @@
-package ObjectSample;
+package objectSample;
 
 //生徒クラス
 class Student {

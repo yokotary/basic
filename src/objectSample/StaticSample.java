@@ -1,4 +1,4 @@
-package ObjectSample;
+package objectSample;
 
 //staticのまとめ
 class StaticTest {
