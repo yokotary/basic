@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+//ArrayListは配列と違い要素を自由に追加、削除できる
 class ArrayList1 {
     public static void main(String[] args) {
         //List<データの型> 変数名 = new ArrayList<>();
@@ -52,6 +53,5 @@ class ArrayList1 {
         System.out.println(list.size());
         //空かどうか？ 空ならtrue if文とかで使える
         System.out.println(list.isEmpty());
-
     }
 }
