@@ -19,15 +19,16 @@ class Map2 {
                 new Member("2","Bob"),
                 new Member("3","Jhon")
         ));
-        //一覧
+
+        System.out.println("一覧");
         System.out.println(member);
 
-        //変換
+        System.out.println("変換");
         Map<String,Member> map = toMap(member);
         System.out.println(map);
 
-        //検索
-        String key = "Tom";
+        System.out.println("検索");
+        String key = "";
         if (map.containsKey(key)) {
             //存在しているとき
             System.out.println(map.get(key));
@@ -35,5 +36,6 @@ class Map2 {
             //存在していないとき
             System.out.println(key + "は見つかりません");
         }
+
     }
 }

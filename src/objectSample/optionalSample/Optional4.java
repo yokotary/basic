@@ -6,7 +6,7 @@ import java.util.Optional;
 
 class Optional4 {
     public static void main(String[] args) {
-        //ofNullableは()の中身だったら表示する
+        //ofNullableは()の中身がnull以外だったら表示する
         Optional<String> opt1 = Optional.ofNullable("abc");
         Optional<String> opt2 = Optional.ofNullable(null);
 

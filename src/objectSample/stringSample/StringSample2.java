@@ -8,7 +8,9 @@ class StringSample2 {
         String key = "花";
 
         if (name.indexOf(key) >= 0){
-            
+            System.out.println(name + "のなかに" + key + "は" + (name.indexOf(key)) + "番目");
+        }else {
+            System.out.println("なし");
         }
     }
 }
