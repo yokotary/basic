@@ -24,7 +24,8 @@ class WriteSample2 {
 
         Path path = Paths.get("src", "objectSample", "fileSample", "output2.csv");
 
-        //StandardOpenOption.APPENDで追記
+        //StandardOpenOption.APPENDで追記(新規作成ではないのでファイルを用意しておくこと)
+        //基本BufferedWriterを使ったこの書き方で書くことが推奨
         try (BufferedWriter bw = Files.newBufferedWriter(path, StandardCharsets.UTF_8, StandardOpenOption.APPEND)) {
             for (String line:data) {
                 //書く

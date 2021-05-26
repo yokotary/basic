@@ -1,9 +1,9 @@
-package objectSample.stringSample;
+package objectSample.fileSample;
 
 import ex.ex14.Gender;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 class Person {
@@ -35,5 +35,12 @@ class Person {
     //年齢を取得するメソッド
     public Long getAge(){
         return ChronoUnit.YEARS.between(birth, LocalDateTime.now());
+    }
+    //","カンマで区切るcsvに書き込む用のメソッド
+    public String toCsv(){
+        return String.join(",",
+                name,
+                gender.getName(),
+                DateTimeFormatter.ofPattern("yyyy-MM-dd").format(birth));
     }
 }

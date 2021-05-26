@@ -1,4 +1,4 @@
-package objectSample.stringSample;
+package objectSample.fileSample;
 
 import ex.ex14.Gender;
 
