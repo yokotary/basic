@@ -57,7 +57,8 @@ class Student {
 
     @Override
     public String toString() {
-        return String.format("%s,%s,%d,%d,%2d,%3d,%3d,%3d",name,gender.getName(),grade,cl,no,jp,math,eng);
+        return String.format("%s,%s,%d,%d,%2d,%3d,%3d,%3d,平均点: %.2f"
+                ,name,gender.getName(),grade,cl,no,jp,math,eng,getAve());
     }
     //合計のメソッド
     public int getSum(){
