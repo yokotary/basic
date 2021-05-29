@@ -1,4 +1,4 @@
-package test;
+package test.fileTest;
 
 import ex.ex14.Gender;
 
@@ -18,7 +18,7 @@ class Test {
 //    }
     public static void main(String[] args) {
         //ファイルがあるかどうか判断してあれば読み込んで並び替える、なければ作って生徒のデータ書き込む
-        Path humanPath = Paths.get("src","test","human.csv");
+        Path humanPath = Paths.get("src", "test","human.csv");
         List<Student> studentList = new ArrayList<>();
         //humanPathがあったら
         if (Files.exists(humanPath)) {
@@ -45,7 +45,7 @@ class Test {
             //平均点の高い順に並び替え
             studentList.sort(Comparator.comparing(Student::getAve,Comparator.reverseOrder()));
             //新規書き込み
-            Path sortFilePath = Paths.get("src","test","sortAve.csv");
+            Path sortFilePath = Paths.get("src", "test","sortAve.csv");
             try (BufferedWriter bw = Files.newBufferedWriter(sortFilePath, StandardOpenOption.APPEND)){
                 for (Student s:studentList) {
                     bw.write(String.valueOf(s));

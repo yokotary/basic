@@ -1,4 +1,4 @@
-package test;
+package test.fileTest;
 
 import ex.ex14.Gender;
 
