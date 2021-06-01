@@ -13,7 +13,7 @@ class CloneTest {
         //int[] array = {1,2,3}は３個のint型、1と２と３を作りましたという意味
         System.out.println("参照型");
         int[] array = {1,2,3};
-        // ↓ これだと謎の文字が表示される、メモリの住所とかだった気がする、先生に聞いた方がいいかも
+        // ↓ これだとobjectのハッシュコードが出る
         System.out.println(array);
         //　↓　arrayのi番目を表示
         //メモリの０番目は１、１番目は２、２番目は３出る

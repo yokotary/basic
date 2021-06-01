@@ -8,6 +8,7 @@ class ConsumerSample {
     public static void main(String[] args) {
         //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/function/Consumer.html
         List<Integer> integerList = new ArrayList<>();
+        //Consumer<引数の型> 変数名 = 引数 -> 戻り値;
         Consumer<String> consumer1 = s -> System.out.println(s + "です");
         Consumer<Integer> consumer2 = i -> integerList.add(i);
 
